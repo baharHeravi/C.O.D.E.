@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>The CODE Initiative</title>
+    <title>The C.O.D.E Initiative</title>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
@@ -19,7 +19,7 @@
     <link href="css/mdb.min.css" rel="stylesheet">
 
     <!-- Template styles -->
-    <style rel="stylesheet">
+    <style>
         /* TEMPLATE STYLES */
         
         html,
@@ -31,7 +31,6 @@
         
         .navbar {
             background-color: transparent;
-            opacity:1.0;
         }
         
         .scrolling-navbar {
@@ -46,18 +45,18 @@
         
         footer.page-footer {
             background-color: #EBF5FB;
-            margin-top: -1px;
+            margin-top: 2rem;
         }
         
         @media only screen and (max-width: 768px) {
             .navbar {
-                background-color: #EBF5FB;
+                background-color: #3c4f74;
             }
         }
         /*Call to action*/
         
         .flex-center {
-            color: grey;
+            color: #fff;
         }
         
         .view {
@@ -67,16 +66,13 @@
             -o-background-size: cover;
             background-size: cover;
         }
+        /*Contact section*/
         
-        .navbar-brand {
-            height: 100%;
-            width: auto;
-            max-height: 40px;
-            max-width: 5%; 
-            overflow: visible;
-            padding: 15px;
+        #contact .fa {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #1C2331;
         }
-       
     </style>
 
 </head>
@@ -85,74 +81,258 @@
 
     <!--Navbar-->
     <nav class="navbar navbar-toggleable-md navbar-dark fixed-top scrolling-navbar">
-        <div class="container">
+        <div class="container container-fluid">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- <a class="navbar-brand" href="./index.html">
-                <img class="navlogo" src="logos/02.png">
-            </a> -->
-            
+            <a class="navbar-brand" href="#" style="color: #003366">
+                <strong>C.O.D.E</strong>
+            </a>
             <div class="collapse navbar-collapse" id="navbarNav1">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link"  style="color: grey">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="indexTest.html" style="color: #003366">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown btn-group">
-                        <a class="nav-link dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: grey">About</a>
+                        <a class="nav-link dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #003366">About</a>
                         <div class="dropdown-menu dropdown" aria-labelledby="dropdownMenu1">
-                            <a class="dropdown-item" style="color: grey">Mission Statement</a>
-                            <a class="dropdown-item" style="color: grey">Our Team</a>
-                            <a class="dropdown-item" style="color: grey">Join Us</a>
+                            <a class="dropdown-item" href="#about" style="color: #003366">Mission Statement</a>
+                            <a class="dropdown-item" href="#team" style="color: #003366">Our Team</a>
+                            <a class="dropdown-item" href="join.html" style="color: #003366">Join Us</a>
                         </div>
                     </li>
-                    
                     <li class="nav-item dropdown btn-group">
-                        <a class="nav-link dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: grey">Workshops</a>
+                        <a class="nav-link dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #003366">Workshops</a>
                         <div class="dropdown-menu dropdown" aria-labelledby="dropdownMenu1">
-                            <a class="dropdown-item" style="color: grey">Schedule</a>
-                            <a class="dropdown-item" style="color: grey">Our Volunteers</a>
+                            <a class="dropdown-item" href="schedule.html" style="color: grey" style="color: #003366">Schedule</a>
+                            <a class="dropdown-item" href="OurVolunteers.html" style="color: grey" style="color: #003366">Our Volunteers</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="color: grey">Volunteer</a>
+                        <a class="nav-link" href="#contact" style="color: #003366">Contact</a>
+
                     </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" style="color: grey">Contact Us</a>
-                    </li>
-                    
                 </ul>
-                <div class="pull-right">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                                <a class="nav-link" style="color: grey">Donate</a>
-                        </li>
-                    </ul>
-                </div>    
+                
+                <ul class="navbar-nav mr-auto">   
+                    <li class="nav-item">
+                        <a class="nav-link" href="donate.html" style="color: #003366">Donate</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
     <!--/.Navbar-->
-	    
-	    
-
-   
-
+    
     <!--Mask-->
-    <div class="view">
+    <div class="view hm-bluegrey-light">
         <div class="full-bg-img flex-center">
-            <ul class="animated fadeInUp">
-                <img src="logos/01.png"  height="400" width="800">
-               
+            
+            <img src="logos/01.png" style="max-width:50%; max-height:50%; object-fit: contain">
+                
+            <ul class="list-unstyled">
+                
+                <!--<li>
+                    <h1 class="h1-responsive wow fadeInDown" data-wow-delay="0.2s" style="color: #36486b">The C.O.D.E Initiative</h1></li>-->
                 <li>
-                    <a target="_blank" href="#!" class="btn btn-primary btn-lg" rel="nofollow">Sign up!</a>
-                    <a target="_blank" href="#!" class="btn btn-default btn-lg" rel="nofollow">Learn more</a>
+                    <p class="wow fadeInDown" style="color: #36486b">*Insert catchphrase here*</p>
+                </li>
+                <li>
+                    <a target="_blank" href="signup.html" class="btn btn-primary btn-lg wow fadeInLeft" data-wow-delay="0.2s" rel="nofollow">Sign up!</a>
+                    <a href="#about" class="btn btn-default btn-lg wow fadeInRight" data-wow-delay="0.2s" rel="nofollow">Learn more</a>
                 </li>
             </ul>
+               
         </div>
     </div>
     <!--/.Mask-->
+
+    <!-- Main container-->
+    <div class="container">
+
+        <div  id="about" class="divider-new">
+            <h2 class="h2-responsive wow fadeIn" data-wow-delay="0.2s">Mission</h2>
+        </div>
+
+        <!--Section: About-->
+        <section class="text-center wow fadeIn" data-wow-delay="0.2s">
+
+            <h4>The C.O.D.E. Initiative is a not-for-profit organization with a mission to help kids on the autism spectrum find passion in learning by focusing on teaching them to explore the skill of coding and computer programming.</h4>
+            
+            <br><br>
+            
+            <p>Our main focus is to help children with Autism Spectrum Disorder (ASD) find a passion and interest in learning through exposing them to coding. We hope to touch their lives in a meaningful way by introducing them to a skill that can potentially improve their livelihood and help them reach independence. Too often, children with ASD struggle to succeed under the traditional school system because most institutions do not have that one-to-one teacher to student ratio that improves the learning environment for these kids. This discouragement impacts them significantly and often leads to a disinterest in pursuing a post-secondary education. It is time to focus on the vast capa</p>
+
+        </section>
+        <!--Section: About-->
+
+        <div  id="team" class="divider-new">
+            <h2 class="h2-responsive wow fadeIn">Our Team</h2>
+        </div>
+
+        <!--Section: Best features-->
+        <section>
+
+            <div class="row">
+
+                <!--First columnn-->
+                <div class="col-lg-3">
+                    <!--Card-->
+                    <div class="card wow fadeIn">
+
+                        <!--Card image-->
+                        <div class="view overlay hm-white-slight">
+                            <img src="TeamPhoto/ME.JPG" class="img-fluid" alt="">
+                            <a>
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                        <!--/.Card image-->
+
+                        <!--Card content-->
+                        <div class="card-block text-center">
+                            <!--Title-->
+                            <h4 class="card-title">Bahar Heravi Moussavi</h4>
+                            <hr>
+                            <!--Text-->
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident fuga animi architecto dolores dicta cum quo velit.</p>
+                        </div>
+                        <!--/.Card content-->
+
+                    </div>
+                    <!--/.Card-->
+                </div>
+                <!--First columnn-->
+
+                <!--Second columnn-->
+                <div class="col-lg-3">
+                    <!--Card-->
+                    <div class="card wow fadeIn" data-wow-delay="0.2s">
+
+                        <!--Card image-->
+                        <div class="view overlay hm-white-slight">
+                            <img src="TeamPhoto/MOHY.jpg" class="img-fluid" alt="">
+                            <a>
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                        <!--/.Card image-->
+
+                        <!--Card content-->
+                        <div class="card-block text-center">
+                            <!--Title-->
+                            <h4 class="card-title">Mohamed Aly</h4>
+                            <hr>
+                            <!--Text-->
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident fuga animi architecto dolores dicta cum quo velit.</p>
+                        </div>
+                        <!--/.Card content-->
+
+                    </div>
+                    <!--/.Card-->
+                </div>
+                <!--Second columnn-->
+
+                <!--Third columnn-->
+                <div class="col-lg-3">
+                    <!--Card-->
+                    <div class="card wow fadeIn" data-wow-delay="0.4s">
+
+                        <!--Card image-->
+                        <div class="view overlay hm-white-slight">
+                            <img src="TeamPhoto/HUSSEIN.png" class="img-fluid" alt="">
+                            <a>
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                        <!--/.Card image-->
+
+                        <!--Card content-->
+                        <div class="card-block text-center">
+                            <!--Title-->
+                            <h4 class="card-title">Hussein El-Afifi</h4>
+                            <hr>
+                            <!--Text-->
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident fuga animi architecto dolores dicta cum quo velit.</p>
+                        </div>
+                        <!--/.Card content-->
+
+                    </div>
+                    <!--/.Card-->
+                </div>
+                <!--Third columnn-->
+
+                <!--First columnn-->
+                <div class="col-lg-3">
+                    <!--Card-->
+                    <div class="card wow fadeIn" data-wow-delay="0.6s">
+
+                        <!--Card image-->
+                        <div class="view overlay hm-white-slight">
+                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20(21).jpg" class="img-fluid" alt="">
+                            <a>
+                                <div class="mask"></div>
+                            </a>
+                        </div>
+                        <!--/.Card image-->
+
+                        <!--Card content-->
+                        <div class="card-block text-center">
+                            <!--Title-->
+                            <h4 class="card-title">*name*</h4>
+                            <hr>
+                            <!--Text-->
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident fuga animi architecto dolores dicta cum quo velit.</p>
+                        </div>
+                        <!--/.Card content-->
+
+                    </div>
+                    <!--/.Card-->
+                </div>
+                <!--First columnn-->
+            </div>
+
+        </section>
+        <!--/Section: Best features-->
+
+        <div  id="contact" class="divider-new">
+            <h2 class="h2-responsive wow fadeIn">Contact us</h2>
+        </div>
+
+        <!--Section: Contact-->
+        <section>
+            <div class="row">
+                <!--First column-->
+                <div class="col-md-8">
+                    <div id="map-container" class="z-depth-1 wow fadeIn" style="height: 300px"></div>
+                </div>
+                <!--/First column-->
+
+                <!--Second column-->
+                <div class="col-md-4">
+                    <ul class="text-center">
+                        <li class="wow fadeIn" data-wow-delay="0.2s"><i class="fa fa-map-marker teal-text"></i>
+                            <p>Vancouver, BC 11111, CANADA</p>
+                        </li>
+
+                        <li class="wow fadeIn" data-wow-delay="0.3s"><i class="fa fa-phone teal-text"></i>
+                            <p>*phone number*</p>
+                        </li>
+
+                        <li class="wow fadeIn" data-wow-delay="0.4s"><i class="fa fa-envelope teal-text"></i>
+                            <p>*email*</p>
+                        </li>
+                    </ul>
+                </div>
+                <!--/Second column-->
+            </div>
+        </section>
+        <!--Section: Contact-->
+
+    </div>
+    <!--/ Main container-->
+
+
 
     <!--Footer-->
     <footer class="page-footer center-on-small-only">
@@ -163,35 +343,54 @@
 
                 <!--First column-->
                 <div class="col-md-3 offset-lg-1 hidden-lg-down">
-                    <h5 class="title" style="color: black">ABOUT C.O.D.E</h5>
-                    <p style="color: grey">*small introduction*</p>
+                    <h5 class="title" style="color: #36486b">ABOUT C.O.D.E</h5>
+                    <p style="color: #36486b">The C.O.D.E. Initiative is a not-for-profit organization with a mission to help kids on the autism spectrum find passion in learning by focusing on teaching them to explore the skill of coding and computer programming.</p>
+
                 </div>
                 <!--/.First column-->
 
                 <hr class="hidden-md-up">
 
                 <!--Second column-->
-                <div class="col-lg-2 col-md-4 offset-lg-4">
-                    <h5 class="title" style="color: black">First column</h5>
+                <div class="col-lg-2 col-md-4 offset-lg-1">
+                    <h5 class="title" style="color: #36486b">Our Projects</h5>
                     <ul>
-                        <li><a href="#!" style="color: grey">Link 1</a></li>
-                        <li><a href="#!" style="color: grey">Link 2</a></li>
-                        <li><a href="#!" style="color: grey">Link 3</a></li>
-                        <li><a href="#!" style="color: grey">Link 4</a></li>
+                        <li><a href="#!" style="color: #36486b">Jeffs Bike Shop</a></li>
                     </ul>
                 </div>
                 <!--/.Second column-->
 
-                
+                <hr class="hidden-md-up">
+
+                <!--Third column-->
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="title" style="color: #36486b">Useful Resources</h5>
+                    <ul>
+                        <li><a href="#!" style="color: #36486b">2016 Advertising Report</a></li>
+                    </ul>
+                </div>
+                <!--/.Third column-->
+
+                <hr class="hidden-md-up">
+
+                <!--Fourth column-->
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="title" style="color: #36486b">Find us on</h5>
+                    <ul >
+                        <li ><a href="#!" style="color: #36486b">Facebook</a></li>
+                        <li><a href="#!" style="color: #36486b">Twitter</a></li>
+                        <li><a href="#!" style="color: #36486b">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <!--/.Fourth column-->
+
             </div>
         </div>
         <!--/.Footer Links-->
-
-    
         <!--Copyright-->
         <div class="footer-copyright">
-            <div class="container-fluid">
-                © 2017 Copyright: <a href="#!"> The C.O.D.E. Initiative </a>
+            <div class="container-fluid" style="color: #36486b">
+                © 2017 Copyright
 
             </div>
         </div>
@@ -214,6 +413,41 @@
 
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <!--Google Maps-->
+    <script src="//maps.google.com/maps/api/js"></script>
+
+    <script>
+        function init_map() {
+
+            var var_location = new google.maps.LatLng(49.2627193, -123.2406383);
+
+            var var_mapoptions = {
+                center: var_location,
+
+                zoom: 14
+            };
+
+            var var_marker = new google.maps.Marker({
+                position: var_location,
+                map: var_map,
+                title: "Vancouver"
+            });
+
+            var var_map = new google.maps.Map(document.getElementById("map-container"),
+                var_mapoptions);
+
+            var_marker.setMap(var_map);
+
+        }
+
+        google.maps.event.addDomListener(window, 'load', init_map);
+    </script>
+
+    <!-- Animations init-->
+    <script>
+        new WOW().init();
+    </script>
 
 
 </body>
