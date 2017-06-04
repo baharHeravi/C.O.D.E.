@@ -24,7 +24,7 @@
         body,
         header,
         .view {
-            height: 150%;
+            height: 100%;
         }
 /* Navigation*/
         /* TEMPLATE STYLES */
@@ -71,7 +71,7 @@
         .description {
             padding-top: 50%;
             padding-bottom: 3rem;
-            color: #fff
+            color: black;
         }
      
         
@@ -144,10 +144,20 @@
             <div class="container">
                 <div class="row" id="home">
 
-                   
+                    <!--First column-->
+                    <div class="col-lg-6">
+                        <div class="description">
+                            <h2 class="h2-responsive wow fadeInLeft">Sign up right now! </h2>
+                            <hr class="hr-dark wow fadeInLeft">
+                            <p class="wow fadeInLeft" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem repellendus quasi fuga nesciunt dolorum nulla magnam veniam sapiente, fugiat! Commodi sequi non animi ea dolor molestiae, quisquam iste, maiores. Nulla.</p>
+                            <br>
+                            <a class="btn btn-primary btn-lg wow fadeInLeft" data-wow-delay="0.7s">Learn more</a>
+                        </div>
+                    </div>
+                    <!--/.First column-->
 
                     <!--Second column-->
-                    <div class="col-lg-6 offset-lg-3" style="color:black">
+                    <div class="col-lg-6" style="color:black">
                         <!--Form-->
                         <div class="card ">
                             <div class="card-block">
@@ -162,109 +172,45 @@
                                 <!--Body-->
                                 <div class="md-form">
                                     <i class="fa fa-pencil prefix"></i>
-                                    <input type="text" id="form1" class="form-control" disabled>
-                                    <label for="form1">*from previous page*</label>
+                                    <input type="text" id="form1" class="form-control">
+                                    <label for="form1">Full name</label>
                                 </div>
                                 
                                 <div class="md-form">
                                     <i class="fa fa-lock prefix"></i>
-                                    <input type="text" id="form2" class="form-control" disabled>
-                                    <label for="form2">*age* + years old</label>
+                                    <input type="text" id="form2" class="form-control">
+                                    <label for="form2">Age</label>
                                 </div>
                                 
                                 <div class="md-form">
                                     <i class="fa fa-envelope prefix"></i>
-                                    <input type="email" id="form3" class="form-control validate" disabled>
-                                    <label for="form3" >*email*</label>
+                                    <input type="email" id="form3" class="form-control validate">
+                                    <label for="form3" >Your email</label>
                                 </div>
 
-                                
                                 
                                 <div class="md-form">
                                     <i class="fa fa-child prefix"></i>
-                                    <input type="text" id="form4" class="form-control validate" disabled>
-                                    <label for="form4" >*gender*</label>
+                                   
                                 </div>
-                                
-                                <br>
+                                <form class="form-inline">
+
+                                    <fieldset class="form-group" style="padding-left:13%">
+                                        <input name="group1" type="radio" id="radio11" checked="checked">
+                                        <label for="radio11">Male</label>
+                                    </fieldset>
+
+                                    <fieldset class="form-group">
+                                        <input name="group1" type="radio" id="radio21">
+                                        <label for="radio21">Female</label>
+                                    </fieldset>
+                                </form>
 
                                 <div class="text-center">
-                                    <h3><i class="fa fa-home"></i> Address:</h3>
                                     <hr class="mt-2 mb-2">
                                 </div>
-                                
-                                <div class="md-form">
-                                    <input type="text" id="form5" class="form-control validate" >
-                                    <label for="form5" >Address line 1</label>
-                                </div>
-                                
-                                <div class="md-form">
-                                    <input type="text" id="form6" class="form-control validate" >
-                                    <label for="form6" >Address line 2</label>
-                                </div>
-                                
-                                <div class="md-form">
-                                    <input type="text" id="form7" class="form-control validate" >
-                                    <label for="form7" >City</label>
-                                </div>
-                                
-                                <div class="md-form">
-                                    <input type="text" id="form8" class="form-control validate" >
-                                    <label for="form8" >Postcode</label>
-                                </div>
-                                
-                                <div class="md-form">
-                                    <input placeholder="xxx-xxx-xxxx" type="text" id="form9" class="form-control validate" >
-                                    <label for="form9" >Phone number (Home)</label>
-                                </div>
-                                
-                                <br>
-                                
                                 <div class="text-center">
-                                    <h3><i class="fa fa-user"></i> Primary Parent / Gaurdian</h3>
-                                    <hr class="mt-2 mb-2">
-                                </div>
-                                
-                                <br>
-                                
-                                <div class="text-center">
-                                    <h3><i class="fa fa-user"></i> Second Parent / Gaurdian</h3>
-                                    <hr class="mt-2 mb-2">
-                                </div>
-                                
-                                <br>
-                                
-                                <div class="text-center">
-                                    <h3><i class="fa fa-hourglass-end"></i> Student Sign Out</h3>
-                                    <hr class="mt-2 mb-2">
-                                </div>
-                                
-                                <br>
-                                
-                                <div class="text-center">
-                                    <h3><i class="fa fa-hospital-o"></i> Health and Behavior</h3>
-                                    <hr class="mt-2 mb-2">
-                                </div>
-                                
-                                <br>
-                                
-                                <div class="text-center">
-                                    <h3><i class="fa fa-camera"></i> Photo Consent</h3>
-                                    <hr class="mt-2 mb-2">
-                                </div>
-                                
-                                <br>
-
-                                <div class="text-center">
-                                    <h3><i class="fa fa-wpforms"></i> Waivers and Agreements</h3>
-                                    <hr class="mt-2 mb-2">
-                                </div>
-                                
-                                
-                                
-                                
-                                <div class="text-center">
-                                    <button class="btn btn-success">Submit</button>
+                                    <button class="btn btn-deep-purple">Next</button>
                                 </div>
 
                             </div>
