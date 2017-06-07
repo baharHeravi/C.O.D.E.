@@ -24,7 +24,7 @@
         body,
         header,
         .view {
-            height: 100%;
+            height: 180%;
         }
 /* Navigation*/
         /* TEMPLATE STYLES */
@@ -54,13 +54,13 @@
             background-color: #EBF5FB;
         }
         
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 1000px) {
             .navbar {
-                background-color: transparent;
+                background-color: #abd5ee;
             }
             .card {
-            margin-top: 0%;
-        }
+                margin-top: 0%;
+            }
         }
         /*Call to action*/
         
@@ -128,7 +128,7 @@
                     </li>
                 </ul>
                 
-                <ul class="navbar-nav mr-auto">   
+                <ul class="navbar-nav pull-right" id="donate">   
                     <li class="nav-item">
                         <a class="nav-link" href="donate.html" style="color: #003366">Donate</a>
                     </li>
@@ -139,11 +139,12 @@
     <!--/.Navbar-->
     
     <!--Mask-->
-    <div class="view hm-bluegrey-strong">
+    <div class="view hm-bluegrey-light">
         <div class="full-bg-img">
             <div class="container">
                 <div class="row" id="home">
 
+<<<<<<< HEAD
                     <!--First column-->
                     <div class="col-lg-6">
                         <div class="description">
@@ -157,9 +158,12 @@
                         </div>
                     </div>
                     <!--/.First column-->
+=======
+                   
+>>>>>>> 941acc69b49c6b29d2fed1ba780347d5acc8da08
 
                     <!--Second column-->
-                    <div class="col-lg-6" style="color:black">
+                    <div class="col-lg-6 offset-lg-3" style="color:black">
                         <!--Form-->
                         <div class="card ">
                             <div class="card-block">
@@ -174,45 +178,383 @@
                                 <!--Body-->
                                 <div class="md-form">
                                     <i class="fa fa-pencil prefix"></i>
-                                    <input type="text" id="form1" class="form-control">
-                                    <label for="form1">Full name</label>
+                                    <input type="text" id="form1" class="form-control" disabled>
+                                    <label for="form1">*from previous page*</label>
                                 </div>
                                 
                                 <div class="md-form">
                                     <i class="fa fa-lock prefix"></i>
-                                    <input type="text" id="form2" class="form-control">
-                                    <label for="form2">Age</label>
+                                    <input type="text" id="form2" class="form-control" disabled>
+                                    <label for="form2">*age* + years old</label>
+                                </div>
+                                
+                        
+                                
+                                
+                                <div class="md-form">
+                                    <i class="fa fa-child prefix"></i>
+                                    <input type="text" id="form3" class="form-control " disabled>
+                                    <label for="form3" >*gender*</label>
+                                </div>
+                                
+                                <br>
+
+                                <div class="text-center">
+                                    <h3><i class="fa fa-home"></i> Address:</h3>
+                                    <hr class="mt-2 mb-2">
+                                </div>
+                                
+                                <div class="md-form">
+                                    <input type="text" id="form4" class="form-control " >
+                                    <label for="form4" >Address line 1</label>
+                                </div>
+                                
+                                <div class="md-form">
+                                    <input type="text" id="form5" class="form-control " >
+                                    <label for="form5" >Address line 2</label>
+                                </div>
+                                
+                                <div class="md-form">
+                                    <input type="text" id="form6" class="form-control " >
+                                    <label for="form6" >City</label>
+                                </div>
+                                
+                                <div class="md-form">
+                                    <input type="text" id="form7" class="form-control " >
+                                    <label for="form7" >Postcode</label>
+                                </div>
+                                
+                                <div class="md-form">
+                                    <input placeholder="xxx-xxx-xxxx" type="text" id="form8" class="form-control " >
+                                    <label for="form8" >Phone number (Home)</label>
+                                </div>
+                                
+                                <br>
+                                
+                                <div class="text-center">
+                                    <h3><i class="fa fa-user"></i> Primary Parent / Gaurdian</h3>
+                                    <hr class="mt-2 mb-2">
+                                </div>
+                                
+                                <!--Body-->
+                                <div class="md-form">
+                                    <i class="fa fa-pencil prefix"></i>
+                                    <input type="text" id="formx1" class="form-control">
+                                    <label for="formx1">Full name</label>
+                                </div>
+                                
+                                <div class="md-form">
+                                    <i class="fa fa-lock prefix"></i>
+                                    <input type="text" id="formx2" class="form-control">
+                                    <label for="formx2">Age</label>
                                 </div>
                                 
                                 <div class="md-form">
                                     <i class="fa fa-envelope prefix"></i>
-                                    <input type="email" id="form3" class="form-control validate">
-                                    <label for="form3" >Your email</label>
+                                    <input type="email" id="formx3" class="form-control " disabled>
+                                    <label for="formx3" >*email already populated*</label>
                                 </div>
-
+                                
+                                <div class="float pull-right">
+                                    <p>We will contact you on this email</p>
+                                </div>
+                                <br>
+                                <br>
                                 
                                 <div class="md-form">
-                                    <i class="fa fa-child prefix"></i>
+                                    <input placeholder="DD/MM/YYYY" type="text" id="formx4" class="form-control" >
+                                    <label for="formx4" >Date of birth</label>
+                                </div>
+                                
+                                <div class="md-form">
+                                    <i class="fa fa-user prefix"></i>
                                    
                                 </div>
                                 <form class="form-inline">
 
                                     <fieldset class="form-group" style="padding-left:13%">
-                                        <input name="group1" type="radio" id="radio11" checked="checked">
-                                        <label for="radio11">Male</label>
+                                        <input name="group1" type="radio" id="radio1" checked="checked">
+                                        <label for="radio1">Male</label>
                                     </fieldset>
 
                                     <fieldset class="form-group">
-                                        <input name="group1" type="radio" id="radio21">
-                                        <label for="radio21">Female</label>
+                                        <input name="group1" type="radio" id="radio2">
+                                        <label for="radio2">Female</label>
                                     </fieldset>
                                 </form>
-
+                                
+                                <hr class="mt-2 mb-2">
+                                
+                                <div class="md-form">
+                                    <input placeholder="xxx-xxx-xxxx" type="text" id="formx5" class="form-control " >
+                                    <label for="formx5" >Phone number (Mobile)</label>
+                                </div>
+                                
+                                <div class="float pull-right">
+                                    <p>Our primary contant number</p>
+                                </div>
+                                <br>
+                                <div class="md-form">
+                                    <input type="text" id="formx6" class="form-control " >
+                                    <label for="formx6" >Address line 1</label>
+                                </div>
+                                
+                                <div class="md-form">
+                                    <input type="text" id="formx7" class="form-control " >
+                                    <label for="formx7" >Address line 2</label>
+                                </div>
+                                
+                                <div class="md-form">
+                                    <input type="text" id="formx8" class="form-control " >
+                                    <label for="formx8" >City</label>
+                                </div>
+                                
+                                <div class="md-form">
+                                    <input type="text" id="formx9" class="form-control " >
+                                    <label for="formx9" >Postcode</label>
+                                </div>
+                                
+                                <br>
+                                
                                 <div class="text-center">
+                                    <h3><i class="fa fa-user"></i> Second Parent / Gaurdian</h3>
                                     <hr class="mt-2 mb-2">
                                 </div>
+                                
+                                <div class="md-form">
+                                    <i class="fa fa-pencil prefix"></i>
+                                    <input type="text" id="formy1" class="form-control">
+                                    <label for="formy1">Full name</label>
+                                </div>
+                                
+                                <div class="md-form">
+                                    <i class="fa fa-lock prefix"></i>
+                                    <input type="text" id="formy2" class="form-control">
+                                    <label for="formy2">Age</label>
+                                </div>
+                                
+                                <div class="md-form">
+                                    <i class="fa fa-envelope prefix"></i>
+                                    <input type="email" id="formy3" class="form-control " disabled>
+                                    <label for="formy3" >*email already populated*</label>
+                                </div>
+                                
+                                <div class="md-form">
+                                    <input placeholder="DD/MM/YYYY" type="text" id="formy4" class="form-control" >
+                                    <label for="formy4" >Date of birth</label>
+                                </div>
+                                
+                                <div class="md-form">
+                                    <i class="fa fa-user prefix"></i>
+                                   
+                                </div>
+                                <form class="form-inline">
+
+                                    <fieldset class="form-group" style="padding-left:13%">
+                                        <input name="group1" type="radio" id="radio3" checked="checked">
+                                        <label for="radio3">Male</label>
+                                    </fieldset>
+
+                                    <fieldset class="form-group">
+                                        <input name="group1" type="radio" id="radio4">
+                                        <label for="radio4">Female</label>
+                                    </fieldset>
+                                </form>
+                                
+                                <hr class="mt-2 mb-2">
+                                
+                                <div class="md-form">
+                                    <input placeholder="xxx-xxx-xxxx" type="text" id="formy5" class="form-control " >
+                                    <label for="formy5" >Phone number (Mobile)</label>
+                                </div>
+                                
+                                <div class="float pull-right">
+                                    <p>Our secondary contant number</p>
+                                </div>
+                                <br>
+                                <br>
+                                
                                 <div class="text-center">
-                                    <button class="btn btn-deep-purple">Next</button>
+                                    <h3><i class="fa fa-hourglass-end"></i> Student Sign Out</h3>
+                                    <hr class="mt-2 mb-2">
+                                </div>
+                                
+                                <div class="container">
+                                    <div class='row'>
+                                        <div class="col-lg-7 col-md-7">
+                                            <p><b>Sign Out</b></p>
+                                            <p><b>Self Release </b>means your child signs out by himself. </p>
+                                            
+                                            <p><b>Guardian Release</b> means your child must be picked up at the end of the day by someone in the Guardian Release List.</p>
+                                        </div>
+                                        <div class="col-lg-5 col-md-5">
+                                            <form class="form">
+
+                                                <fieldset class="form-group">
+                                                    <input name="group1" type="radio" id="radio5" >
+                                                    <label for="radio5">Self Release</label>
+                                                </fieldset>
+
+                                                <fieldset class="form-group">
+                                                    <input name="group1" type="radio" id="radio6" checked="checked">
+                                                    <label for="radio6">Gaurdian Release</label>
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <hr class="mt-2 mb-2">
+                               
+                                <div class="md-form">
+                                    <i class="fa fa-pencil prefix"></i>
+                                    <textarea type="text" id="formz1" class="md-textarea"></textarea>
+                                    <label for="formz1">Guardian Release List, separate by commas</label>
+                                </div>
+                                 
+                                <p>If you chose the Guardian Release option, only the people in the above list can sign out your child. Include yourself if applicable.</p>
+                                 
+                                 
+                                
+                                <hr class="mt-2 mb-2">
+                                
+                                
+                               
+                                <div class="text-center">
+                                    <h3><i class="fa fa-hospital-o"></i> Health and Behavior</h3>
+                                    <hr class="mt-2 mb-2">
+                                </div>
+                                
+                                <div class="container">
+                                    <div class='row'>
+                                        <div class="col-lg-7 col-md-7">
+                                            <p>Does your child have any allergies?</p>
+                                           
+                                        </div>
+                                        <div class="col-lg-5 col-md-5">
+                                            <form class="form">
+
+                                                <fieldset class="form-group">
+                                                    <input name="group1" type="radio" id="radio5" >
+                                                    <label for="radio5">Yes</label>
+                                                </fieldset>
+
+                                                <fieldset class="form-group">
+                                                    <input name="group1" type="radio" id="radio6" checked="checked">
+                                                    <label for="radio6">No</label>
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class='row'>
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="md-form">
+                                            <i class="fa fa-pencil prefix"></i>
+                                            <textarea type="text" id="formA1" class="md-textarea"></textarea>
+                                            <label for="formA1">If yes, please specify:</label>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <br>
+                                
+                                <div class="container">
+                                    <div class='row'>
+                                        <div class="col-lg-7 col-md-7">
+                                            <p>Does your child have any behavioral concerns?</p>
+                                           
+                                        </div>
+                                        <div class="col-lg-5 col-md-5">
+                                            <form class="form">
+
+                                                <fieldset class="form-group">
+                                                    <input name="group1" type="radio" id="radio5" >
+                                                    <label for="radio5">Yes</label>
+                                                </fieldset>
+
+                                                <fieldset class="form-group">
+                                                    <input name="group1" type="radio" id="radio6" checked="checked">
+                                                    <label for="radio6">No</label>
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class='row'>
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="md-form">
+                                            <i class="fa fa-pencil prefix"></i>
+                                            <textarea type="text" id="formA1" class="md-textarea"></textarea>
+                                            <label for="formA1">If yes, please identify what calming strategies does your child use:</label>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <br>
+                                
+                                <div class="text-center">
+                                    <h3><i class="fa fa-camera"></i> Photo Consent</h3>
+                                    <hr class="mt-2 mb-2">
+                                </div>
+                                
+                                <p>May we photograph your child and use the images for marketing purposes?</p>
+                                
+                                <div class="container">
+                                    <div class='row'>
+                                        <div class="col-lg-4 col-md-4">
+                                            <p>Photo Consent</p>
+                                           
+                                        </div>
+                                        <div class="col-lg-8 col-md-8">
+                                            <form class="form">
+
+                                                <fieldset class="form-group">
+                                                    <input name="group1" type="radio" id="radio5" >
+                                                    <label for="radio5">Yes, you may photograph my child</label>
+                                                </fieldset>
+
+                                                <fieldset class="form-group">
+                                                    <input name="group1" type="radio" id="radio6" checked="checked">
+                                                    <label for="radio6">No, please don't photograph my child</label>
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                                <br>
+
+                                <div class="text-center">
+                                    <h3><i class="fa fa-wpforms"></i> Waivers and Agreements</h3>
+                                    <hr class="mt-2 mb-2">
+                                </div>
+                                
+                                <p>Please read the following waivers and agreements carefully.</p>
+                                
+                                <hr class="mt-2 mb-2">
+                                
+                                <p><b>*name*</b></p>
+                                <p>I agree .... *agreement 1 name*</p>
+                                <p>I agree .... *agreement 2 name*</p>
+
+                                <hr class="mt-2 mb-2">
+                                
+                                <p>By entering my name below, I certify that I have reviewed and agree to all the waivers and agreements above.</p>
+                                
+                                <br>
+                                
+                                <div class="md-form">
+                                    <input placeholder="Full Name" type="text" id="formy5" class="form-control " >
+                                    <label for="formy5" >Electronic Signature:</label>
+                                </div>
+                                
+                                <div class="text-center">
+                                    <button class="btn btn-success">Submit</button>
                                 </div>
 
                             </div>
@@ -290,7 +632,7 @@
         <!--/.Copyright-->
 
     </footer>
-    <!--/.Footer-->
+    <!--/.Footer-->,,
 
 
     <!-- SCRIPTS -->
